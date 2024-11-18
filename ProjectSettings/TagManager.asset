@@ -7,6 +7,8 @@ TagManager:
   - PositionNapBinh
   - PositionBinhHutAm
   - PositionBinhChaySacKy
+  - PositionOngNghiem
+  - PositionBinhNon
   layers:
   - Default
   - TransparentFX
