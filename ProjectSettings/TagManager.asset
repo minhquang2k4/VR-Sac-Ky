@@ -9,6 +9,7 @@ TagManager:
   - PositionBinhChaySacKy
   - PositionOngNghiem
   - PositionBinhNon
+  - GiaDo
   layers:
   - Default
   - TransparentFX
