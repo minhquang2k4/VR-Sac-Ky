@@ -13,6 +13,11 @@ TagManager:
   - BanMong
   - OngHut
   - BinhSacKy
+  - Xanh
+  - Vang
+  - CocVang
+  - OngNhoGiot
+  - CocXanh
   layers:
   - Default
   - TransparentFX
