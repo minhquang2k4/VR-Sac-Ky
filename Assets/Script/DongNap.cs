@@ -6,7 +6,7 @@ using UnityEngine;
 public class DongNap : MonoBehaviour
 {
     [SerializeField] Transform _transform;
-    [SerializeField] string _tag;    
+    [SerializeField] string _tag;
 
     Vector3 _position;
 
@@ -22,9 +22,8 @@ public class DongNap : MonoBehaviour
     }
     void OnTriggerExit(Collider collision)
     {
-      
-      
-            this.transform.SetParent(null);
+
+        this.transform.SetParent(null);
 
     }
 }

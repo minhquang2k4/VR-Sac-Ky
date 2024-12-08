@@ -5,26 +5,31 @@ using UnityEngine;
 public class DungDich : MonoBehaviour
 {
     public OngNhoGiot _ongNhoGiot;
+    public Thia _thia;
     MeshRenderer rend;
     int cnt = 0;
     float scale = 0.1f;
-    bool check;
+    bool checkOng;
+    bool checkThia;
 
+    bool check;
     void Awake()
     {
         rend = GetComponent<MeshRenderer>();
     }
     void Update()
     {
-        check = _ongNhoGiot.IsEmpty;
+        check = _ongNhoGiot.Check;
+        checkOng = _ongNhoGiot.IsEmpty;
+        checkThia = _thia.IsEmpty;
     
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("OngNhoGiot"))
+        if (other.gameObject.CompareTag("OngNhoGiot") || other.gameObject.CompareTag("Thia"))
         {
-            if (check == false)
+            if (checkOng == false && !check   || checkThia == false)
             {
                 rend.enabled = true;
                 cnt++;

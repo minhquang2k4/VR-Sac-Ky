@@ -18,6 +18,9 @@ TagManager:
   - CocVang
   - OngNhoGiot
   - CocXanh
+  - Bot
+  - Thia
+  - Pheu
   layers:
   - Default
   - TransparentFX
