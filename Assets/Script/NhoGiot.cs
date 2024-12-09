@@ -6,24 +6,36 @@ public class NhoGiot : MonoBehaviour
 {
     // Start is called before the first frame update
     MeshRenderer rend;
+    public OngNhoGiot ongNhoGiot;
+    bool isEmpty;
+    bool check;
 
     void Awake()
     {
         rend = GetComponent<MeshRenderer>();
     }
+    void Update()
+    {
+        isEmpty = ongNhoGiot.IsEmpty;
+        check = ongNhoGiot.Check;
+    }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("OngHut"))
+        if (!isEmpty && other.gameObject.CompareTag("OngNhoGiot"))
         {
             if (rend != null)
             {
+                Debug.Log("rend not Null");
                 rend.enabled = true;
-                Debug.Log("Nho giot ra khoi ong hut");
             }
             else
             {
-                Debug.LogError("MeshRenderer chưa được khởi tạo.");
+                Debug.Log("rend is Null");
             }
+        }
+        else
+        {
+            Debug.Log("IsEmpty is true");
         }
     }
 

@@ -8,7 +8,8 @@ public class OngNhoGiot : MonoBehaviour
     [SerializeField] GameObject vang;
     public bool _isEmpty = true;
     public bool check;
-    public bool Check{
+    public bool Check
+    {
         get { return check; }
     }
     public bool IsEmpty
@@ -36,18 +37,42 @@ public class OngNhoGiot : MonoBehaviour
         }
         else
         {
-            if (other.gameObject.CompareTag("CocXanh"))
+            if (check == false && other.gameObject.CompareTag("CocXanh"))
             {
                 xanh.SetActive(false);
-                _isEmpty = true;
+                vang.SetActive(false);
 
             }
             if (check == false && other.gameObject.CompareTag("CocVang"))
             {
                 xanh.SetActive(false);
                 vang.SetActive(false);
+            }
+            if (check)
+            {
+                if (other.gameObject.CompareTag("BanMong"))
+                {
+                    vang.SetActive(false);
+                    check = false;
+                    _isEmpty = true;
+                }
+            }
+
+        }
+    }
+    public void OnTriggerExit(Collider other)
+    {
+        if (check == false)
+        {
+            if (other.gameObject.CompareTag("CocXanh") || other.gameObject.CompareTag("CocVang"))
+            {
                 _isEmpty = true;
             }
         }
+        else
+        {
+            return;
+        }
+
     }
 }

@@ -12,36 +12,41 @@ public class DungDich : MonoBehaviour
     bool checkOng;
     bool checkThia;
 
-    bool check;
+    bool checkCocVang;
     void Awake()
     {
         rend = GetComponent<MeshRenderer>();
     }
     void Update()
     {
-        check = _ongNhoGiot.Check;
+        checkCocVang = _ongNhoGiot.Check;
         checkOng = _ongNhoGiot.IsEmpty;
         checkThia = _thia.IsEmpty;
-    
+
     }
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("OngNhoGiot") || other.gameObject.CompareTag("Thia"))
         {
-            if (checkOng == false && !check   || checkThia == false)
+            if (checkCocVang == false)
             {
-                rend.enabled = true;
-                cnt++;
-                if (cnt <= 5)
+                if (checkOng == false || checkThia == false)
                 {
-                    this.transform.localScale = new Vector3(1, this.transform.localScale.y + scale, 1);
+                    rend.enabled = true;
+                    cnt++;
+                    if (cnt <= 5)
+                    {
+                        this.transform.localScale = new Vector3(1, this.transform.localScale.y + scale, 1);
+                    }
+
                 }
-            }
-            else
-            {
-                Debug.LogWarning("OngNhoGiot component không tồn tại hoặc _isEmpty là false.");
+                else
+                {
+                    Debug.LogWarning("OngNhoGiot component không tồn tại hoặc _isEmpty là false.");
+                }
             }
         }
     }
+
 }
