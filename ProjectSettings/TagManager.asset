@@ -9,6 +9,18 @@ TagManager:
   - PositionBinhChaySacKy
   - PositionOngNghiem
   - PositionBinhNon
+  - GiaDo
+  - BanMong
+  - OngHut
+  - BinhSacKy
+  - Xanh
+  - Vang
+  - CocVang
+  - OngNhoGiot
+  - CocXanh
+  - Bot
+  - Thia
+  - Pheu
   layers:
   - Default
   - TransparentFX
