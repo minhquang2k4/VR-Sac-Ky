@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pheu : MonoBehaviour
 {
-    Vector3 _position;
+    // Vector3 _position;
     public bool check = true;
     public void OnTriggerStay(Collider other)
     {
@@ -18,7 +18,10 @@ public class Pheu : MonoBehaviour
     }
     public void OnTriggerExit(Collider other)
     {
-        this.transform.SetParent(null);
-        check = true;
+        if (!check && other.gameObject.CompareTag("PositionOngNghiem"))
+        {
+            this.transform.SetParent(null);
+            check = true;
+        }
     }
 }

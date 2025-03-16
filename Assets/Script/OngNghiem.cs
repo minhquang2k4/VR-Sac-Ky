@@ -34,7 +34,9 @@ public class OngNghiem : MonoBehaviour
             {
                 if (!_isEmpty)
                 {
-                    other.transform.parent.GetChild(2).gameObject.GetComponent<MeshRenderer>().enabled = true;
+                    Transform target = other.transform.parent.GetChild(2);
+                    target.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                    target.localScale = new Vector3(0.90793f, 0.3059987f, 1f);
                     rend.enabled = false;
                 }
             }

@@ -15,7 +15,6 @@ public class DungMoi : MonoBehaviour
     void Update()
     {
         _isEmpty = !rend.enabled;
-
     }
     void OnTriggerStay(Collider other)
     {
