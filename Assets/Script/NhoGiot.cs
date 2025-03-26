@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,28 +6,28 @@ using UnityEngine;
 public class NhoGiot : MonoBehaviour
 {
     // Start is called before the first frame update
-    MeshRenderer rend;
-    public OngNhoGiot ongNhoGiot;
-    bool isEmpty;
-    bool check;
+    MeshRenderer _rend;
+    public MaoDan MaoDan;
+    private bool _isEmpty;
+
+    private void Update()
+    {
+        _isEmpty = MaoDan.isEmpty;
+    }
 
     void Awake()
     {
-        rend = GetComponent<MeshRenderer>();
+        _rend = GetComponent<MeshRenderer>();
     }
-    void Update()
-    {
-        isEmpty = ongNhoGiot.IsEmpty;
-        check = ongNhoGiot.Check;
-    }
+
     void OnTriggerEnter(Collider other)
     {
-        if (!isEmpty && other.gameObject.CompareTag("OngNhoGiot"))
+        if (!_isEmpty && other.gameObject.CompareTag("MaoDan"))
         {
-            if (rend != null)
+            if (_rend != null)
             {
                 Debug.Log("rend not Null");
-                rend.enabled = true;
+                _rend.enabled = true;
             }
             else
             {

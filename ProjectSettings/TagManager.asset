@@ -25,6 +25,8 @@ TagManager:
   - Acid
   - Butanol
   - BinhNon
+  - MaoDan
+  - GiayLoc
   layers:
   - Default
   - TransparentFX
