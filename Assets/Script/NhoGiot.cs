@@ -5,16 +5,7 @@ using UnityEngine;
 
 public class NhoGiot : MonoBehaviour
 {
-    // Start is called before the first frame update
     MeshRenderer _rend;
-    public MaoDan MaoDan;
-    private bool _isEmpty;
-
-    private void Update()
-    {
-        _isEmpty = MaoDan.isEmpty;
-    }
-
     void Awake()
     {
         _rend = GetComponent<MeshRenderer>();
@@ -22,21 +13,13 @@ public class NhoGiot : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (!_isEmpty && other.gameObject.CompareTag("MaoDan"))
+        if (other.gameObject.CompareTag("MaoDan"))
         {
-            if (_rend != null)
+            if (other.transform.GetChild(0).GetComponent<MeshRenderer>().enabled)
             {
-                Debug.Log("rend not Null");
                 _rend.enabled = true;
+                other.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
             }
-            else
-            {
-                Debug.Log("rend is Null");
-            }
-        }
-        else
-        {
-            Debug.Log("IsEmpty is true");
         }
     }
 

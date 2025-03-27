@@ -1,57 +1,53 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ChaySacKy : MonoBehaviour
 {
-
-    // [SerializeField] private Canvas _canvas;
-    //
-    // void OnTriggerEnter(Collider other) {
-    //     if( other.gameObject.CompareTag("BinhSacKy"))
-    //     {
-    //         StartCoroutine(SacKy());
-    //     }
-    // }
-    // IEnumerator SacKy()
-    // {
-    //     yield return new WaitForSeconds(20);
-    //     _canvas.gameObject.SetActive(true);
-    // }
-    [SerializeField] private RectTransform _canvasMask; // Mask hoặc UI Panel che phần trên
-    private float _startHeight = 0f;  // Chiều cao ban đầu (ẩn)
-    private float _targetHeight = 0.01f;  // Chiều cao tối đa (hiển thị đầy đủ)
-
-    void Start()
-    {
-        _canvasMask.sizeDelta = new Vector2(_canvasMask.sizeDelta.x, _startHeight); // Ẩn ban đầu
-        _canvasMask.gameObject.SetActive(false);
+    [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] private MeshRenderer left;
+    [SerializeField] private MeshRenderer right;
+    [SerializeField] private Canvas canvasEnd;
+    
+    private float alpha = 0.05f;
+    private float alphaUV = 0.3f;
+    private bool  check = false;
+    
+    void OnTriggerEnter(Collider other) {
+        if( other.gameObject.CompareTag("BinhSacKy"))
+        {
+            check = true;
+            StartCoroutine(SacKy());
+        }
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("BinhSacKy"))
+        if (check && other.gameObject.CompareTag("UV"))
         {
-            StartCoroutine(SacKy());
+            canvasGroup.alpha = alphaUV;
+            canvasEnd.enabled = true;
+        }
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (check && other.gameObject.CompareTag("UV"))
+        {
+            canvasGroup.alpha = alpha;
         }
     }
 
     IEnumerator SacKy()
     {
-        yield return new WaitForSeconds(2); // Đợi 2 giây trước khi hiện
-
-        _canvasMask.gameObject.SetActive(true);
-        float duration = 10f;
-        float elapsedTime = 0f;
-
-        while (elapsedTime < duration)
+        yield return new WaitForSeconds(20);
+        left.enabled = false;
+        right.enabled = false;
+        while (canvasGroup.alpha < alpha)
         {
-            elapsedTime += Time.deltaTime;
-            float newHeight = Mathf.Lerp(_startHeight, _targetHeight, elapsedTime / duration);
-            _canvasMask.sizeDelta = new Vector2(_canvasMask.sizeDelta.x, newHeight);
+            canvasGroup.alpha += Time.deltaTime / 10;
             yield return null;
         }
-
-        _canvasMask.sizeDelta = new Vector2(_canvasMask.sizeDelta.x, _targetHeight);
     }
 }

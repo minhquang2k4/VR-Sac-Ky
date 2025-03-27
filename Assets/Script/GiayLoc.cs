@@ -9,8 +9,11 @@ public class GiayLoc : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PositionOngNghiem"))
-        {
-            bot.SetActive(true);
+        {   
+            if (other.transform.GetChild(2).gameObject.GetComponent<MeshRenderer>().enabled)
+            {
+                bot.SetActive(true);
+            }
         }
     }
 }

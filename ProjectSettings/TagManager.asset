@@ -27,6 +27,7 @@ TagManager:
   - BinhNon
   - MaoDan
   - GiayLoc
+  - UV
   layers:
   - Default
   - TransparentFX
