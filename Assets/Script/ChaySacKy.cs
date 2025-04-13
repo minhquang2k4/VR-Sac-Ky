@@ -41,7 +41,7 @@ public class ChaySacKy : MonoBehaviour
 
     IEnumerator SacKy()
     {
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(30);
         left.enabled = false;
         right.enabled = false;
         while (canvasGroup.alpha < alpha)
