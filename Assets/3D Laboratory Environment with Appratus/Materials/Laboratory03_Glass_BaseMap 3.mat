@@ -20,17 +20,18 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Laboratory03_Glass_BaseMap 1
+  m_Name: Laboratory03_Glass_BaseMap 3
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 2100000, guid: 94c11be5b5b74c440a5c2fc75dc65d88, type: 2}
   m_ModifiedSerializedProperties: 10
   m_ValidKeywords:
+  - _EMISSION
   - _NORMALMAP
   - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 1
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: Transparent
@@ -55,12 +56,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cull: 0
+    - _Cull: 2
     - _Glossiness: 0.95
-    - _Metallic: 0.72
-    - _Smoothness: 0
+    - _Metallic: 0.848
+    - _Smoothness: 0.375
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _EmissionColor: {r: 0.03194699, g: 0.11320752, b: 0.019757915, a: 1}
+    - _BaseColor: {r: 0.90699995, g: 0.90699995, b: 0.90699995, a: 0}
+    - _Color: {r: 0.90699995, g: 0.90699995, b: 0.90699995, a: 0}
+    - _EmissionColor: {r: 0.110677026, g: 0.5377358, b: 0.09892311, a: 1}
   m_BuildTextureStacks: []
