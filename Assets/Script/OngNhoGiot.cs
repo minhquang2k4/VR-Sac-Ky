@@ -5,7 +5,6 @@ using UnityEngine;
 public class OngNhoGiot : MonoBehaviour
 {
     [SerializeField] GameObject xanh;
-    [SerializeField] GameObject vang;
     public bool _isEmpty = true;
     public bool check;
     public bool Check
@@ -28,36 +27,17 @@ public class OngNhoGiot : MonoBehaviour
                 xanh.SetActive(true);
                 _isEmpty = false;
             }
-            if (other.gameObject.CompareTag("CocVang"))
-            {
-                check = true;
-                vang.SetActive(true);
-                _isEmpty = false;
-            }
         }
         else
         {
             if (check == false && other.gameObject.CompareTag("CocXanh"))
             {
                 xanh.SetActive(false);
-                vang.SetActive(false);
-
             }
             if (check == false && other.gameObject.CompareTag("CocVang"))
             {
                 xanh.SetActive(false);
-                vang.SetActive(false);
             }
-            if (check)
-            {
-                if (other.gameObject.CompareTag("BanMong"))
-                {
-                    vang.SetActive(false);
-                    check = false;
-                    _isEmpty = true;
-                }
-            }
-
         }
     }
     public void OnTriggerExit(Collider other)
