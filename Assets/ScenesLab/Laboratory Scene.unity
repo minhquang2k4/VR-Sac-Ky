@@ -2196,6 +2196,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &68589942
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2535,6 +2536,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!1 &99080657
 GameObject:
   m_ObjectHideFlags: 0
@@ -3168,6 +3170,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &118609327
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3643,6 +3646,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!1001 &129207397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5119,6 +5123,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!64 &184632734
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6366,6 +6371,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &235679380
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6722,6 +6728,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &237789680
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7402,6 +7409,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &261758185
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9316,6 +9324,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!64 &319256712
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9930,6 +9939,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &324514964
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14461,6 +14471,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &494999602
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14863,6 +14874,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &514627888
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15839,6 +15851,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!65 &568505959
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18993,6 +19006,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!136 &689206315
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22111,6 +22125,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!114 &799524195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25009,6 +25024,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!64 &900465532
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25923,6 +25939,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &929150268
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27891,6 +27908,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!114 &987094724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28456,6 +28474,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &1006070702
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28805,6 +28824,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!64 &1010312950
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33118,6 +33138,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!64 &1164121128
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34703,6 +34724,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &1233914858
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35545,6 +35567,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!65 &1258870380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37611,6 +37634,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &1338311670
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38263,6 +38287,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &1357783985
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39500,6 +39525,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &1415159622
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -45190,6 +45216,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!23 &1579223896
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47914,6 +47941,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &1670404481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55504,6 +55532,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &1898039681
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55819,6 +55848,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!64 &1903070223
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56716,6 +56746,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!136 &1934541413
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -57656,6 +57687,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &1961186914
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -64952,6 +64984,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &3469287837610725882
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -65373,6 +65406,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &4471089596519475637
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -65605,6 +65639,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &4683474603123166815
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -75369,6 +75404,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &5972328067735474681
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -75586,6 +75622,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &7149656001462189437
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -75919,6 +75956,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &7584531252789933433
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -76193,6 +76231,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &8451813524793381429
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -76320,7 +76359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ongNhoGiot: {fileID: 8451813524793381431}
-  _thia: {fileID: 0}
+  _thia: {fileID: 799524198}
 --- !u!114 &8634489158413157064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76559,6 +76598,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
+  _log: {fileID: 0}
 --- !u!54 &9130924058673323676
 Rigidbody:
   m_ObjectHideFlags: 0
