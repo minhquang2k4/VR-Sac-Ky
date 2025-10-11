@@ -6,24 +6,24 @@ using UnityEngine;
 public class DungMoi : MonoBehaviour
 {
     public bool _isEmpty;
-    MeshRenderer rend;
-    void Awake()
-    {
-        rend = this.transform.GetChild(2).GetComponent<MeshRenderer>();
-    }
+    [SerializeField ]MeshRenderer rend;
 
     void Update()
     {
         _isEmpty = !rend.enabled;
     }
+
+    public void ActiveLiquid()
+    {
+        rend.enabled = true;    
+    }
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("BinhSacKy"))
+        if (other.CompareTag("PositionBinhChaySacKy"))
         {
             if (!_isEmpty)
             {
-                MeshRenderer otherRend = other.GetComponent<MeshRenderer>();
-                otherRend.enabled = true;
+               other.gameObject.GetComponent<BinhChaySacky>().ActiveLiquid();
                 rend.enabled = false;
             }
         }
