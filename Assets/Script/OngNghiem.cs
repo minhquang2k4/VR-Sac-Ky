@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class OngNghiem : MonoBehaviour
+public class TestTube : MonoBehaviour
 {
     public bool _isEmpty;
     MeshRenderer rend;
@@ -76,7 +76,6 @@ public class OngNghiem : MonoBehaviour
             vfx.SetActive(false);
         }
     }
-    
     
     IEnumerator DelayStart()
     {
