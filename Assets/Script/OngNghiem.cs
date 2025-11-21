@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -7,9 +8,13 @@ public class OngNghiem : MonoBehaviour
 {
     public bool _isEmpty;
     MeshRenderer rend;
+    private GameObject vfx;
+    private bool checkVfx = false;
+    
     void Awake()
     {
         rend = this.transform.GetChild(2).GetComponent<MeshRenderer>();
+        vfx = this.transform.GetChild(4).gameObject;
     }
 
     void Update()
@@ -50,5 +55,33 @@ public class OngNghiem : MonoBehaviour
                 rend.enabled = false;
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("GiaDoCachThuy"))
+        {
+            if (checkVfx)
+            {
+                return;
+            }
+            StartCoroutine(DelayStart());
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("GiaDoCachThuy"))
+        {
+            vfx.SetActive(false);
+        }
+    }
+    
+    
+    IEnumerator DelayStart()
+    {
+        yield return new WaitForSeconds(30);
+        vfx.SetActive(true);
+        checkVfx = true;
     }
 }

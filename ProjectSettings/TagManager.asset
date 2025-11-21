@@ -28,6 +28,7 @@ TagManager:
   - MaoDan
   - GiayLoc
   - UV
+  - GiaDoCachThuy
   layers:
   - Default
   - TransparentFX

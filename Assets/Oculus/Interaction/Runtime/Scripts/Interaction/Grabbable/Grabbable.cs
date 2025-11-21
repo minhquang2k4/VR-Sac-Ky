@@ -18,7 +18,10 @@
  * limitations under the License.
  */
 
+// using Computer_Architecture;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 namespace Oculus.Interaction
@@ -40,6 +43,9 @@ namespace Oculus.Interaction
 
         [SerializeField]
         private int _maxGrabPoints = -1;
+        
+        [SerializeField] GameObject _log;
+
 
         public int MaxGrabPoints
         {
@@ -163,7 +169,8 @@ namespace Oculus.Interaction
             {
                 return;
             }
-
+            
+            Log.WriteLog(this.gameObject.name, Time.time , "Pick up");
             _activeTransformer.BeginTransform();
         }
 
@@ -173,7 +180,6 @@ namespace Oculus.Interaction
             {
                 return;
             }
-
             _activeTransformer.UpdateTransform();
         }
 
@@ -183,6 +189,7 @@ namespace Oculus.Interaction
             {
                 return;
             }
+            Log.WriteLog(this.gameObject.name, Time.time ,"Drop");
             _activeTransformer.EndTransform();
             _activeTransformer = null;
         }
@@ -218,4 +225,5 @@ namespace Oculus.Interaction
 
         #endregion
     }
+    
 }
