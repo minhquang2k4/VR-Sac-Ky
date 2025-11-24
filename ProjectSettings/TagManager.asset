@@ -29,6 +29,8 @@ TagManager:
   - GiayLoc
   - UV
   - GiaDoCachThuy
+  - PostionChaySacKy
+  - PositionChaySacKy
   layers:
   - Default
   - TransparentFX
