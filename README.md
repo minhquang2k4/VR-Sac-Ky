@@ -47,24 +47,3 @@ nghiệm ảo và lưu dữ liệu học tập qua Firebase.
 2.  Cài XR Plugin Management + Meta XR SDK\
 3.  Chuyển sang Android\
 4.  Build & Run vào Meta Quest
-
-## ☁️ Cấu hình Firebase
-
-File cần thiết:
-
-    Assets/StreamingAssets/google-services.json
-
-## 📊 Dữ liệu lưu lên Firebase
-
--   completedSteps\
--   timeSpent\
--   errorCount\
--   timestamp
-
-## 📝 Tác giả
-
-Phạm Minh Quân -- Đại học Kinh tế Quốc dân
-
-## 📄 Giấy phép
-
-Sử dụng cho mục đích khóa luận tốt nghiệp.
