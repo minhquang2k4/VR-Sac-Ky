@@ -110,14 +110,13 @@ Unity sẽ tự load plugin Oculus/Meta XR và XR Interaction Toolkit.
 ### 3. Cài lên Meta Quest
 
 -   **Build & Run** trực tiếp\
-    hoặc\
 -   Xuất APK → Cài bằng **SideQuest**
 
 ------------------------------------------------------------------------
 
 # 🧑‍🏫 **Dành cho giảng viên**
 
--   Đánh giá thao tác theo thời gian\
+-   Đánh giá thao tác theo thời gian
 -   Hỗ trợ phân tích hành vi học tập
 
 ------------------------------------------------------------------------
