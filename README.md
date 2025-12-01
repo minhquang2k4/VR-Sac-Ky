@@ -33,10 +33,6 @@ Dựa trên cấu trúc thực tế bạn đang sử dụng:
     │   ├── Scenes/                                       # Scene chính của ứng dụng
     │   ├── ScenesLab/                                    # Scene lab thử nghiệm
     │   ├── Script/                                       # Mã nguồn C#
-    │   │   ├── TLCSteps/                                 # Quy trình TLC theo từng bước
-    │   │   ├── Interaction/                              # Grab, ray, collider, VR input
-    │   │   ├── UI/                                       # Hệ thống giao diện VR
-    │   │   └── Firebase/                                 # Ghi dữ liệu & đồng bộ với cloud
     │   ├── TextMesh Pro/                                 # Text trong giao diện
     │   ├── TutorialInfo/                                 # Thư mục auto từ Unity
     │   ├── XR/                                           # XR Plugin Management
