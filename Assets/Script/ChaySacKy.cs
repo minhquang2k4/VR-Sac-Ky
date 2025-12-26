@@ -10,15 +10,12 @@ public class ChaySacKy : ThuLai
 
     [Header("Failure Chance")]
     [SerializeField][Range(0f, 1f)] private float failureChance = 0.2f;
-    [SerializeField] private Vector3 failureEulerOffset = new Vector3(0f, 45f, 0f);
-    [SerializeField] private Vector3 failurePosOffset = Vector3.zero;
 
     private float alpha = 0.05f;
     private float alphaUV = 0.3f;
 
     private bool runningSacKy = false;
     private bool attemptedSacKy = false;
-
 
     void OnTriggerEnter(Collider other)
     {
@@ -37,7 +34,7 @@ public class ChaySacKy : ThuLai
             //That bai -> Thu lai
             if (roll < failureChance)
             {
-                ApplyFailPose();
+                ArmFailPoseOnSnap();
                 runningSacKy = false;
                 FailOverlayManager.ShowOverlay();
                 RaiseFailed();
@@ -79,13 +76,11 @@ public class ChaySacKy : ThuLai
         }
     }
 
-    private void ApplyFailPose()
+
+    private void ArmFailPoseOnSnap()
     {
-        //Quay lech so voi huong ban dau
-        transform.rotation = transform.rotation * Quaternion.Euler(failureEulerOffset);
-        if (failurePosOffset != Vector3.zero)
-        {
-            transform.position += transform.rotation * failurePosOffset;
-        }
+        var snap = GetComponent<SnapChaySacKy>();
+        snap.SetFailPoseForNextSnap();
     }
+
 }
