@@ -22,8 +22,17 @@ public abstract class ThuLai : MonoBehaviour
             transform.SetPositionAndRotation(storedPos, storedRot);
         }
     }
-    protected void RaiseFailed()
+    public void RaiseFailed()
     {
         LamSai?.Invoke(this);
+    }
+
+    public void ResetAllSpheres()
+    {
+        var spheres = GetComponentsInChildren<NhoGiot>(true);
+        foreach (var sphere in spheres)
+        {
+            sphere.ResetSphere();
+        }
     }
 }

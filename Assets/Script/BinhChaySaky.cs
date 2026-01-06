@@ -12,6 +12,9 @@ public class BinhChaySacky : MonoBehaviour
     [SerializeField] Image countdownImage;
     [SerializeField] Sprite[] countdownSprites;
 
+    [Header("Testing")]
+    [SerializeField] private KeyCode testKey = KeyCode.T;
+
     private bool isCountdownActive = false;
 
 
@@ -20,6 +23,16 @@ public class BinhChaySacky : MonoBehaviour
         if (countdownCanvas != null)
         {
             countdownCanvas.enabled = false;
+        }
+    }
+
+    // Test
+    void Update()
+    {
+        if (Input.GetKeyDown(testKey))
+        {
+            Debug.Log("[BinhChaySacky] Test key pressed - starting countdown");
+            ActiveLiquid();
         }
     }
 
@@ -44,6 +57,7 @@ public class BinhChaySacky : MonoBehaviour
     private IEnumerator CountdownAndActivate()
     {
         isCountdownActive = true;
+        rend.enabled = true;
 
         if (countdownCanvas != null)
         {
@@ -69,7 +83,6 @@ public class BinhChaySacky : MonoBehaviour
             countdownCanvas.enabled = false;
         }
 
-        rend.enabled = true;
         isCountdownActive = false;
     }
 }
