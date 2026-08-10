@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6323,6 +6323,14 @@ MonoBehaviour:
   pauseOnShow: 1
   autoResetOnShow: 1
   resetDelaySeconds: 5
+  cardDistance: 0.6
+  cardFieldOfView: 26
+  cardColor: {r: 0.06, g: 0.06, b: 0.08, a: 0.9}
+  cardBorderColor: {r: 1, g: 0.35, b: 0.3, a: 1}
+  messageFont: {fileID: 0}
+  messageColor: {r: 1, g: 1, b: 1, a: 1}
+  titleMessage: "TH\u1EA4T B\u1EA0I"
+  countdownLabelFormat: "Th\u1EED l\u1EA1i sau {0} gi\xE2y..."
 --- !u!4 &223336280
 Transform:
   m_ObjectHideFlags: 0
@@ -20468,7 +20476,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   largeSphere: {fileID: 0}
-  failChance: 0.2
+  failChance: 0.1
+  failReasonMessage: "L\u1ED7i: Ch\u1EA5m qu\xE1 to"
   testFailKey: 102
   testSuccessKey: 103
 --- !u!135 &689347555
@@ -21814,7 +21823,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   largeSphere: {fileID: 689347552}
-  failChance: 0.2
+  failChance: 0.1
+  failReasonMessage: "L\u1ED7i: Ch\u1EA5m qu\xE1 to"
   testFailKey: 102
   testSuccessKey: 103
 --- !u!1 &728028972
@@ -30927,7 +30937,8 @@ MonoBehaviour:
   left: {fileID: 1267543749}
   right: {fileID: 725605697}
   canvasEnd: {fileID: 1500817074}
-  failureChance: 0.2
+  failureChance: 0.1
+  failReasonMessage: "L\u1ED7i: B\u1EA3n m\u1ECFng \u0111\u1EB7t l\u1EC7ch"
 --- !u!114 &1010312955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38403,7 +38414,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   largeSphere: {fileID: 1871044938}
-  failChance: 0.2
+  failChance: 0.1
+  failReasonMessage: "L\u1ED7i: Ch\u1EA5m qu\xE1 to"
   testFailKey: 102
   testSuccessKey: 103
 --- !u!1001 &1273518744
@@ -57088,7 +57100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   largeSphere: {fileID: 0}
-  failChance: 0.2
+  failChance: 0.1
+  failReasonMessage: "L\u1ED7i: Ch\u1EA5m qu\xE1 to"
   testFailKey: 102
   testSuccessKey: 103
 --- !u!135 &1871044941

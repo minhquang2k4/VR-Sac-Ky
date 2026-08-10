@@ -11,6 +11,9 @@ public class ChaySacKy : ThuLai
     [Header("Failure Chance")]
     [SerializeField][Range(0f, 1f)] private float failureChance = 0.2f;
 
+    [Header("Fail Message")]
+    [SerializeField] [TextArea(2, 4)] private string failReasonMessage = "Lỗi: Bản mỏng đặt lệch";
+
     private float alpha = 0.05f;
     private float alphaUV = 0.3f;
 
@@ -36,7 +39,7 @@ public class ChaySacKy : ThuLai
             {
                 ArmFailPoseOnSnap();
                 runningSacKy = false;
-                FailOverlayManager.ShowOverlay();
+                FailOverlayManager.ShowOverlay(failReasonMessage);
                 RaiseFailed();
                 return;
             }

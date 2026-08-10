@@ -11,6 +11,9 @@ public class NhoGiot : MonoBehaviour
     [Header("Fail Setting")]
     [SerializeField] [Range (0f, 1f)] private float failChance = 0.2f;
 
+    [Header("Fail Message")]
+    [SerializeField] [TextArea(2, 4)] private string failReasonMessage = "Lỗi: Chấm quá to";
+
     [Header("Test")]
     [SerializeField] private KeyCode testFailKey = KeyCode.F;
     [SerializeField] private KeyCode testSuccessKey = KeyCode.G;
@@ -104,7 +107,7 @@ public class NhoGiot : MonoBehaviour
 
     private void TriggerFail()
     {
-        FailOverlayManager.ShowOverlay();
+        FailOverlayManager.ShowOverlay(failReasonMessage);
 
         var thuLai = GetComponentInParent<ThuLai>();
         if (thuLai != null)
